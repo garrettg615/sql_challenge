@@ -73,4 +73,11 @@ from public.employee_master
 group by last_name
 order by total DESC;
 
+-- Bonus: create a view to be used in jupyter notebook
 
+CREATE VIEW employee_db AS
+SELECT * FROM public.employee_master
+INNER JOIN salaries
+on public.employee_master.employee_no = public.salaries.emp_no
+INNER JOIN public.title
+ON public.employee_master.emp_title_id = public.title.title_no;
