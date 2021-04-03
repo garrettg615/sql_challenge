@@ -1,3 +1,4 @@
+-- This file contains queries for homework questions and Bonus objective
 
 --1. List the following details of each employee: employee number, last name, first name, sex, and salary.
 
